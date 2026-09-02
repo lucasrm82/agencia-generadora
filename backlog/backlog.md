@@ -14,7 +14,7 @@
   - Prohibido publicar en internet.
   - Prohibido leer o modificar ficheros fuera del directorio de trabajo.
 - [ ] Añadir OpenSpec para que lo utilice el agente director.
-  - Especificaciones: prestablecidas + adaptativas
+  - Especificaciones: prestablecidas + adaptativas con formato sugerido
 - [ ] Generador multi-agencia mono-repositorio: capaz de generar múltiples agencias en un único repositorio. 
   - Crear agencia plantilla. 
     - Parecida a la generadora. Autonoma con auto-aprendizaje.
