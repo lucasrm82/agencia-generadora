@@ -6,7 +6,7 @@
   - <función 1>
 - Competencias (skills):
   - <skill 1>
-- Modelo sugerido: <small | medio | fuerte> (revisar al conectar LiteLLM)
+- Modelo sugerido: <small | medio | fuerte>
 - Contratos activos: <ids de trabajos>
 - KPI: trabajos=<n> · nota media revisor=<x/10>
 - Historial de evolución:

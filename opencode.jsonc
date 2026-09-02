@@ -10,36 +10,10 @@
 
   "default_agent": "director",
 
-  // ── Multi-proveedor vía LiteLLM ─────────────────────────────
-  // TODO (despliegue): descomenta y ajusta este bloque.
-  // 1) Arranca el proxy LiteLLM (p. ej. http://localhost:4000)
-  // 2) Pon su baseURL y la clave si el proxy la exige
-  // 3) Lista en "models" los IDs que exponga tu proxy (litellm config.yaml)
-  //
-  // "provider": {
-  //   "litellm": {
-  //     "npm": "@ai-sdk/openai-compatible",
-  //     "name": "LiteLLM",
-  //     "options": {
-  //       "baseURL": "http://localhost:4000/v1"
-  //       // "apiKey": "sk-mi-clave"
-  //     },
-  //     "models": {
-  //       "gpt-4o-mini": { "name": "Small — rutas y auxiliares" },
-  //       "gpt-4o":      { "name": "Medio — dirección y ejecución" },
-  //       "gpt-5":       { "name": "Fuerte — ejecución crítica" }
-  //     }
-  //   }
-  // },
-  //
-  // "model": "litellm/gpt-4o",            // modelo por defecto de la agencia
-  // "small_model": "litellm/gpt-4o-mini", // títulos, resúmenes, rutas
-  // Nota: los límites de presupuesto de constitucion/limites.md se pueden
-  // hacer duros en el gateway LiteLLM (max_budget por key/modelo).
-
-  // ── Modelos actuales: DeepSeek (API ya configurada en opencode) ──
-  // LiteLLM queda como opción multi-proveedor futura (fallbacks, budgets).
-  "model": "deepseek/deepseek-v4-pro",       // director, empleado, revisor, reclutador (heredan)
+  // ── Modelos: DeepSeek (API ya configurada en opencode) ──────
+  // Otros proveedores se añaden directo vía "provider" o /connect,
+  // sin gateway intermedio.
+  "model": "deepseek/deepseek-v4-pro",         // director, empleado, revisor, reclutador (heredan)
   "small_model": "deepseek/deepseek-v4-flash", // títulos, resúmenes, compaction
 
   // ── Eficiencia de contexto ──────────────────────────────────

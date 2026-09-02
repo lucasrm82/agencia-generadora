@@ -13,7 +13,6 @@ Una AGENCIA de empleados virtuales IA que funciona sobre opencode. El usuario ha
 ## Primer despliegue (repo clonado)
 1. Clona este repo y abre opencode en la carpeta clonada.
 2. Ejecuta `/constituir`: el director te entrevistará (contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices y procedimientos) y creará todos los recursos iniciales de forma completa.
-3. Opcional: configura tu proxy LiteLLM en `opencode.jsonc` (bloque TODO comentado) y reinicia opencode.
 
 ## Cómo funciona
 - Los agentes son empleados con expediente (`plantilla/empleados/`) y competencias (skills en `.opencode/skills/`, cargadas bajo demanda).
