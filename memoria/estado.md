@@ -2,6 +2,7 @@
 
 - Estado actual: base
 - Carta constitucional: pendiente
+- Última auditoría de carta: —
 - Última evaluación: —
 
 Ciclo de vida: base → constituyendo → operando ⇄ maduro ⇄ evolutivo

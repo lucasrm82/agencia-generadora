@@ -34,6 +34,8 @@
   //
   // "model": "litellm/gpt-4o",            // modelo por defecto de la agencia
   // "small_model": "litellm/gpt-4o-mini", // títulos, resúmenes, rutas
+  // Nota: los límites de presupuesto de constitucion/limites.md se pueden
+  // hacer duros en el gateway LiteLLM (max_budget por key/modelo).
 
   // ── Eficiencia de contexto ──────────────────────────────────
   "compaction": {

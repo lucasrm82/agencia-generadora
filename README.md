@@ -18,17 +18,16 @@ Una AGENCIA de empleados virtuales IA que funciona sobre opencode. El usuario ha
 ## Cómo funciona
 - Los agentes son empleados con expediente (`plantilla/empleados/`) y competencias (skills en `.opencode/skills/`, cargadas bajo demanda).
 - Cada trabajo queda en `memoria/trabajos/<id>/` con encargo, contrato RACI y plan; los entregables van a `salida/<id>/`.
-- La agencia se auto-mejora: consolida lecciones, actualiza expedientes, skills, procedimientos (SoP) y directrices, construye herramientas y commitea sus cambios automáticamente.
+- La agencia se auto-mejora: consolida lecciones y conocimiento de dominio (`memoria/conocimiento/`), actualiza expedientes, skills, procedimientos (SoP) y directrices, promueve scripts a tools de plugin (`.opencode/plugin/`) y commitea sus cambios automáticamente.
 - Límites: la agencia respeta siempre `constitucion/limites.md`; si un trabajo excede un límite, te consulta antes de seguir.
 
 ## Estructura
 - `constitucion/` — carta evolutiva: contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices (funcionales/técnicas) y procedimientos SoP.
 - `plantilla/empleados/` — expedientes de empleados.
-- `herramientas/` — scripts y herramientas construidos por la agencia.
-- `memoria/` — trabajos, feedback, lecciones y estado del ciclo de vida.
+- `memoria/` — trabajos, feedback, conocimiento de dominio, lecciones y estado del ciclo de vida.
 - `salida/` — entregables por trabajo.
-- `.opencode/` — agentes, skills y comandos de la agencia.
+- `.opencode/` — agentes, skills, tools (plugin) y comandos de la agencia.
 
 ## Notas
-- Tras crear o modificar agentes, skills o comandos, reinicia opencode para que se activen.
+- Tras crear o modificar agentes, skills, comandos o plugins, reinicia opencode para que se activen. El director puede estrenarlos antes con `opencode run` (sesión hija) y te avisará del restart pendiente.
 - Los cambios de conocimiento se commitean automáticamente; los de alto riesgo (config, permisos, modelos, MCP) requieren tu aprobación.

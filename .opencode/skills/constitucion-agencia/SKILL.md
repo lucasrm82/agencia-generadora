@@ -16,16 +16,17 @@ description: Use al desplegar la agencia en un repo clonado o cuando el usuario 
 - PROCEDIMIENTOS (SoP): cómo interactuar con el usuario (frecuencia de reportes, formato de entregas, cuándo preguntar) y cómo ejecutar con los agentes (delegación, revisión, handoffs).
 
 ## 2. Carta (constitucion/)
-Escribe, compactos y en listas:
+Escribe, compactos y en listas. Set fijo (no añadas ficheros sin pedirlo):
 - contexto.md, responsabilidades.md, funciones.md, objetivos.md, entregables.md, limites.md (valores concretos y medibles).
-- directrices.md: funcionales y técnicas (sección funcional + sección técnica).
-- procedimientos/sop-usuario.md: SoP de interacción con el usuario.
+- directrices.md: el CÓMO (a diferencia del QUÉ de los anteriores). Sección funcional (tono, formato y estilo de los entregables) y sección técnica (stack, convenciones de código, librerías vetadas). Las mantiene el director de forma evolutiva.
+- procedimientos/sop-usuario.md: SoP de interacción con el usuario (frecuencia de reportes, formato de entregas, cuándo preguntar).
 - procedimientos/sop-ejecucion.md: SoP de ejecución con los agentes (ciclo operativo, dotación, RACI, revisión, handoff, mejora).
 
 ## 3. Sprint de recursos iniciales (completo y óptimo)
 - Fichas de empleados necesarias (plantilla/empleados/), derivadas de las funciones.
 - Skills de dominio necesarias (.opencode/skills/), derivadas de entregables y funciones.
-- Herramientas (scripts) si las funciones las requieren (herramientas/).
+- Tools de plugin (.opencode/plugin/) solo si las funciones las exigen desde el inicio; el resto se promueve por mérito en mejora-continua.
+- Conocimiento de dominio inicial: si el usuario aporta glosario, formatos o APIs, guárdalo en memoria/conocimiento/<tema>.md.
 - Workflows (comandos) si el usuario lo pide (requieren reinicio de opencode).
 - Propón al usuario cambios de config (modelos por rol, permisos) con justificación; no los apliques sin aprobación.
 
