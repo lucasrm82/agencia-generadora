@@ -1,0 +1,67 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  // ============================================================
+  // AGENCIA GENERADORA — agencia de empleados virtuales IA
+  // El usuario interactúa SOLO con el agente "director" (primary).
+  // La carta de la agencia (contexto, límites, etc.) vive en
+  // constitucion/ y se crea al constituir la agencia (/constituir).
+  // ============================================================
+
+  "default_agent": "director",
+
+  // ── Multi-proveedor vía LiteLLM ─────────────────────────────
+  // TODO (despliegue): descomenta y ajusta este bloque.
+  // 1) Arranca el proxy LiteLLM (p. ej. http://localhost:4000)
+  // 2) Pon su baseURL y la clave si el proxy la exige
+  // 3) Lista en "models" los IDs que exponga tu proxy (litellm config.yaml)
+  //
+  // "provider": {
+  //   "litellm": {
+  //     "npm": "@ai-sdk/openai-compatible",
+  //     "name": "LiteLLM",
+  //     "options": {
+  //       "baseURL": "http://localhost:4000/v1"
+  //       // "apiKey": "sk-mi-clave"
+  //     },
+  //     "models": {
+  //       "gpt-4o-mini": { "name": "Small — rutas y auxiliares" },
+  //       "gpt-4o":      { "name": "Medio — dirección y ejecución" },
+  //       "gpt-5":       { "name": "Fuerte — ejecución crítica" }
+  //     }
+  //   }
+  // },
+  //
+  // "model": "litellm/gpt-4o",            // modelo por defecto de la agencia
+  // "small_model": "litellm/gpt-4o-mini", // títulos, resúmenes, rutas
+
+  // ── Eficiencia de contexto ──────────────────────────────────
+  "compaction": {
+    "auto": true,
+    "tail_turns": 15
+  },
+  "tool_output": {
+    "max_lines": 200,
+    "max_bytes": 8192
+  },
+
+  // ── Permisos globales ───────────────────────────────────────
+  // El conocimiento de la agencia se actualiza automáticamente;
+  // el resto (incluida la config) requiere aprobación.
+  "permission": {
+    "edit": {
+      "*": "ask",
+      "**/memoria/**": "allow",
+      "**/plantilla/**": "allow",
+      "**/salida/**": "allow",
+      "**/constitucion/**": "allow",
+      "**/skills/**": "allow",
+      "**/AGENTS.md": "allow"
+    },
+    "bash": {
+      "*": "ask",
+      "git*": "allow",
+      "git push*": "ask"
+    }
+  }
+}
