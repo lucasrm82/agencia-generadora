@@ -6,3 +6,5 @@
 
 ## In Review
 
+- [ ] Añadir OpenSpec gestionado por el director
+
