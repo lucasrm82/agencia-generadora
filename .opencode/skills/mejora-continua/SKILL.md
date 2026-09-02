@@ -1,6 +1,6 @@
 ---
 name: mejora-continua
-description: Use al cerrar cada trabajo o tras feedback consolidado. Audita la carta, consolida lecciones y conocimiento de dominio, actualiza fichas, skills, procedimientos SoP y directrices, promueve scripts a tools de plugin, propone integraciones MCP/API y commitea el conocimiento. Cambios de alto riesgo: aprobación del usuario.
+description: Use al cerrar cada trabajo o tras feedback consolidado. Audita la carta, consolida lecciones y conocimiento de dominio, actualiza fichas, skills, procedimientos SoP y directrices, vigila el tamaño de los ficheros de memoria, promueve scripts a tools de plugin, propone integraciones MCP/API y commitea el conocimiento. Cambios de alto riesgo: aprobación del usuario.
 ---
 
 # Mejora continua
@@ -10,12 +10,13 @@ description: Use al cerrar cada trabajo o tras feedback consolidado. Audita la c
 2. LECCIONES: añade a memoria/lecciones.md solo lecciones generalizables (formato: fecha, título, trabajo origen, frase accionable). No dupliques; refuerza con nueva evidencia.
 3. CONOCIMIENTO DE DOMINIO: lo específico del cliente (glosario, formatos, APIs, esquemas) va a memoria/conocimiento/<tema>.md, compacto. Si se vuelve procedimiento recurrente, promuévelo a la sección de referencia de su skill (capa fría).
 4. FICHAS: actualiza la ficha del empleado participante: KPI (trabajos, nota del revisor) y "Historial de evolución" (una línea por cambio).
-5. PROCEDIMIENTOS Y SKILLS: si un proceso falló o costó caro, corrige la skill correspondiente o los SoP de constitucion/procedimientos/. Un detalle vive en un solo sitio: skill = genérico, SoP = del cliente. Los prompts de .opencode/agents/ se proponen al usuario antes de aplicarlos.
-6. TOOLS: si una tarea se repite 2-3 veces y es automatizable, conviértela en tool de plugin en .opencode/plugin/ (receta abajo). Los scripts de un solo uso viven en salida/<id>/ y no se versionan como tools.
-7. INTEGRACIONES: si un trabajo necesita un sistema externo (MCP, API), propón la integración con justificación y coste. Alto riesgo → aprobación del usuario (cambia config).
-8. DIRECTRICES: mantén constitucion/directrices.md al día (funcionales y técnicas) cuando la práctica lo cambie. La carta es evolutiva.
-9. ESTADO: actualiza memoria/estado.md cuando proceda (operando → maduro si el feedback correctivo es mínimo; maduro → evolutivo si cambia la carta).
-10. COMMIT automático del conocimiento:
+5. SALUD DE ARCHIVOS (reactiva, sin umbrales fijos): si al trabajar detectas un fichero de memoria que se está volviendo demasiado grande (lecciones.md, conocimiento, fichas, handoffs acumulados), consolídalo en el momento: fusiona duplicados, poda lo obsoleto, generaliza, divide en varios ficheros. Actúa solo cuando el tamaño estorbe.
+6. PROCEDIMIENTOS Y SKILLS: si un proceso falló o costó caro, corrige la skill correspondiente o los SoP de constitucion/procedimientos/. Un detalle vive en un solo sitio: skill = genérico, SoP = del cliente. Los prompts de .opencode/agents/ se proponen al usuario antes de aplicarlos.
+7. TOOLS: si una tarea se repite 2-3 veces y es automatizable, conviértela en tool de plugin en .opencode/plugin/ (receta abajo). Los scripts de un solo uso viven en salida/<id>/ y no se versionan como tools.
+8. INTEGRACIONES: si un trabajo necesita un sistema externo (MCP, API), propón la integración con justificación y coste. Alto riesgo → aprobación del usuario (cambia config).
+9. DIRECTRICES: mantén constitucion/directrices.md al día (funcionales y técnicas) cuando la práctica lo cambie. La carta es evolutiva.
+10. ESTADO: actualiza memoria/estado.md cuando proceda (operando → maduro si el feedback correctivo es mínimo; maduro → evolutivo si cambia la carta).
+11. COMMIT automático del conocimiento:
     `git add plantilla memoria constitucion salida .opencode/skills .opencode/plugin AGENTS.md`
     `git commit -m "agencia: <resumen breve>"`
     Nunca incluyas secrets ni archivos fuera de la agencia.
