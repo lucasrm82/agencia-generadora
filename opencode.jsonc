@@ -37,6 +37,11 @@
   // Nota: los límites de presupuesto de constitucion/limites.md se pueden
   // hacer duros en el gateway LiteLLM (max_budget por key/modelo).
 
+  // ── Modelos actuales: DeepSeek (API ya configurada en opencode) ──
+  // LiteLLM queda como opción multi-proveedor futura (fallbacks, budgets).
+  "model": "deepseek/deepseek-v4-pro",       // director, empleado, revisor, reclutador (heredan)
+  "small_model": "deepseek/deepseek-v4-flash", // títulos, resúmenes, compaction
+
   // ── Eficiencia de contexto ──────────────────────────────────
   "compaction": {
     "auto": true,
