@@ -21,6 +21,7 @@ Una AGENCIA de empleados virtuales IA que funciona sobre opencode. El usuario ha
 - Límites: la agencia respeta siempre `constitucion/limites.md`; si un trabajo excede un límite, te consulta antes de seguir.
 
 ## Estructura
+- `backlog/` — ideas y funcionalidades (In Progress, Pending, In Review; archivo con Completed y Discarted).
 - `constitucion/` — carta evolutiva: contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices (funcionales/técnicas) y procedimientos SoP.
 - `plantilla/empleados/` — expedientes de empleados.
 - `memoria/` — trabajos, feedback, conocimiento de dominio, lecciones y estado del ciclo de vida.

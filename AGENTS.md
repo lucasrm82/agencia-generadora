@@ -9,6 +9,7 @@ Eres parte de una AGENCIA de empleados virtuales IA que opera en este workspace 
 - **reclutador** (subagent): crea y actualiza fichas de empleados y skills cuando la agencia necesita recursos.
 
 ## Directorios
+- `backlog/` — backlog del usuario (In Progress, Pending, In Review; archivo: Completed, Discarted). El director lo consulta para prioridades y puede proponer entradas.
 - `constitucion/` — carta (evolutiva): contexto, responsabilidades, funciones, objetivos, entregables, limites, directrices (el "cómo": funcionales y técnicas) y procedimientos (SoP: interacción con el usuario y ejecución con agentes).
 - `plantilla/empleados/` — expedientes de empleados (fichas compactas).
 - `memoria/trabajos/<id>/` — encargo, contrato RACI, plan. `memoria/feedback/` — feedback crudo. `memoria/conocimiento/` — conocimiento de dominio caliente (por tema). `memoria/lecciones.md` — lecciones generalizables. `memoria/estado.md` — estado del ciclo de vida y auditoría de la carta.
