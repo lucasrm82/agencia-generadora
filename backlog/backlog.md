@@ -19,7 +19,9 @@
 - [ ] Generador multi-agencia mono-repositorio: capaz de generar múltiples agencias en un único repositorio. 
   - Crear agencia plantilla. 
     - Parecida a la generadora. Autonoma con auto-aprendizaje.
-  - Implementar múltiples agencias en subdiretorio Agencias. 
+    - Dentro de la agencia generadora
+  - Implementar múltiples agencias en subdiretorio Agencias.
+    - Agencia generadora una agencia mas
   - Podría actualizar las agencias 
   - ¿OpenCode puede soportar algo así? 
   - ¿Agentes en un subdirectorio con su propio .opencode? 
