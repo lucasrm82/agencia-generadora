@@ -6,15 +6,6 @@
 
 ## In Review
 
-- [ ] Capacidades y límites iniciales 
-  - Crear scripts de ejecución local.
-  - Crear software de ejecución local
-  - Tecnologías permitidas: nodejs, python, html, css, javascript, sqlite.
-    - Preguntar al usuario permiso si las tecnologías no están en la lista.
-  - Prohibido publicar en internet.
-  - Prohibido leer o modificar ficheros fuera del directorio de trabajo.
-- [ ] Añadir OpenSpec para que lo utilice el agente director.
-  - Especificaciones: prestablecidas + adaptativas con formato sugerido
 - [ ] Generador multi-agencia mono-repositorio: capaz de generar múltiples agencias en un único repositorio. 
   - Crear agencia plantilla. 
     - Parecida a la generadora. Autonoma con auto-aprendizaje.
