@@ -1,6 +1,6 @@
 ---
 name: constitucion-agencia
-description: Use al desplegar la agencia en un repo clonado o cuando el usuario pida (re)constituirla. Entrevista la carta (contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices y procedimientos SoP), la escribe en constitucion/ y crea todos los recursos iniciales.
+description: Use al desplegar la agencia en un repo clonado o cuando el usuario pida (re)constituirla. Entrevista la carta (contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices fundamentales, normas operativas y procedimientos SoP), la escribe en constitucion/ y crea todos los recursos iniciales.
 ---
 
 # Constitución de la agencia
@@ -12,13 +12,15 @@ description: Use al desplegar la agencia en un repo clonado o cuando el usuario 
 - OBJETIVOS: qué objetivos persigue y cómo se medirán.
 - ENTREGABLES: qué entregables produce y formatos esperados.
 - LÍMITES: presupuesto por trabajo, rondas máximas, alcance permitido/prohibido, nivel de autonomía (qué se hace sin preguntar).
-- DIRECTRICES: reglas funcionales (cómo trabajar, estilo, formato) y técnicas (stack, convenciones de código, herramientas). Las mantiene el director de forma evolutiva.
+- DIRECTRICES FUNDAMENTALES: solo las dicta el usuario, de obligado cumplimiento y en el máximo nivel de jerarquía normativa. El director no puede editarlas.
+- NORMAS OPERATIVAS: reglas funcionales (cómo trabajar, estilo, formato) y técnicas (stack, convenciones de código, herramientas). Las mantiene el director de forma evolutiva.
 - PROCEDIMIENTOS (SoP): cómo interactuar con el usuario (frecuencia de reportes, formato de entregas, cuándo preguntar) y cómo ejecutar con los agentes (delegación, revisión, handoffs).
 
 ## 2. Carta (constitucion/)
 Escribe, compactos y en listas. Set fijo (no añadas ficheros sin pedirlo):
 - contexto.md, responsabilidades.md, funciones.md, objetivos.md, entregables.md, limites.md (valores concretos y medibles).
-- directrices.md: el CÓMO (a diferencia del QUÉ de los anteriores). Sección funcional (tono, formato y estilo de los entregables) y sección técnica (stack, convenciones de código, librerías vetadas). Las mantiene el director de forma evolutiva.
+- directrices.md: directrices fundamentales, solo editables por el usuario, de obligado cumplimiento y en el máximo nivel de jerarquía normativa (por encima de limites.md). El director no las edita.
+- normas-operativa.md: el CÓMO (a diferencia del QUÉ de los anteriores). Sección funcional (tono, formato y estilo de los entregables) y sección técnica (stack, convenciones de código, librerías vetadas). Las mantiene el director de forma evolutiva.
 - procedimientos/sop-usuario.md: SoP de interacción con el usuario (frecuencia de reportes, formato de entregas, cuándo preguntar).
 - procedimientos/sop-ejecucion.md: SoP de ejecución con los agentes (ciclo operativo, dotación, RACI, revisión, handoff, mejora).
 
@@ -36,7 +38,7 @@ Escribe, compactos y en listas. Set fijo (no añadas ficheros sin pedirlo):
 - Recuerda al usuario reiniciar opencode si se crearon skills/agentes/comandos.
 
 ## 5. Evolución de la carta
-La carta es EVOLUTIVA: directrices y procedimientos (SoP) se actualizan continuamente en mejora-continua cuando la práctica los contradice o el usuario pide cambios.
+La carta es EVOLUTIVA: normas operativas y procedimientos (SoP) se actualizan continuamente en mejora-continua cuando la práctica los contradice o el usuario pide cambios. directrices.md NO se toca: solo la edita el usuario.
 
 ## Reconstitución (estado evolutivo)
 Si cambió la carta (contexto, objetivos, límites...): entrevista solo las secciones afectadas, reescribe esos archivos y reconstituye SOLO los recursos impactados. Estado → operando (o maduro directamente si el impacto fue mínimo).

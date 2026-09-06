@@ -1,6 +1,6 @@
 ---
 name: mejora-continua
-description: Use al cerrar cada trabajo o tras feedback consolidado. Audita la carta, consolida lecciones y conocimiento de dominio, actualiza fichas, skills, procedimientos SoP y directrices, vigila el tamaño de los ficheros de memoria, promueve scripts a tools de plugin, propone integraciones MCP/API y commitea el conocimiento. Cambios de alto riesgo: aprobación del usuario.
+description: Use al cerrar cada trabajo o tras feedback consolidado. Audita la carta, consolida lecciones y conocimiento de dominio, actualiza fichas, skills, procedimientos SoP y normas operativas, vigila el tamaño de los ficheros de memoria, promueve scripts a tools de plugin, propone integraciones MCP/API y commitea el conocimiento. Cambios de alto riesgo: aprobación del usuario.
 ---
 
 # Mejora continua
@@ -14,7 +14,7 @@ description: Use al cerrar cada trabajo o tras feedback consolidado. Audita la c
 6. PROCEDIMIENTOS Y SKILLS: si un proceso falló o costó caro, corrige la skill correspondiente o los SoP de constitucion/procedimientos/. Un detalle vive en un solo sitio: skill = genérico, SoP = del cliente. Los prompts de .opencode/agents/ se proponen al usuario antes de aplicarlos.
 7. TOOLS: si una tarea se repite 2-3 veces y es automatizable, conviértela en tool de plugin en .opencode/plugin/ (receta abajo). Los scripts de un solo uso viven en salida/<id>/ y no se versionan como tools.
 8. INTEGRACIONES: si un trabajo necesita un sistema externo (MCP, API), propón la integración con justificación y coste. Alto riesgo → aprobación del usuario (cambia config).
-9. DIRECTRICES: mantén constitucion/directrices.md al día (funcionales y técnicas) cuando la práctica lo cambie. La carta es evolutiva.
+9. NORMAS OPERATIVAS: mantén constitucion/normas-operativa.md al día (funcionales y técnicas) cuando la práctica lo cambie. La carta es evolutiva. directrices.md (fundamentales) NO se toca: solo la edita el usuario.
 10. ESTADO: actualiza memoria/estado.md cuando proceda (operando → maduro si el feedback correctivo es mínimo; maduro → evolutivo si cambia la carta).
 11. COMMIT automático del conocimiento:
     `git add plantilla memoria constitucion salida .opencode/skills .opencode/plugin AGENTS.md`

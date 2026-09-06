@@ -36,6 +36,7 @@
       "**/plantilla/**": "allow",
       "**/salida/**": "allow",
       "**/constitucion/**": "allow",
+      "**/constitucion/directrices.md": "deny",
       "**/skills/**": "allow",
       "**/AGENTS.md": "allow"
     },

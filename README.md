@@ -12,17 +12,17 @@ Una AGENCIA de empleados virtuales IA que funciona sobre opencode. El usuario ha
 
 ## Primer despliegue (repo clonado)
 1. Clona este repo y abre opencode en la carpeta clonada.
-2. Ejecuta `/constituir`: el director te entrevistará (contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices y procedimientos) y creará todos los recursos iniciales de forma completa.
+2. Ejecuta `/constituir`: el director te entrevistará (contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices fundamentales, normas operativas y procedimientos) y creará todos los recursos iniciales de forma completa.
 
 ## Cómo funciona
 - Los agentes son empleados con expediente (`plantilla/empleados/`) y competencias (skills en `.opencode/skills/`, cargadas bajo demanda).
 - Cada trabajo queda en `memoria/trabajos/<id>/` con encargo, contrato RACI y plan; los entregables van a `salida/<id>/`.
-- La agencia se auto-mejora: consolida lecciones y conocimiento de dominio (`memoria/conocimiento/`), actualiza expedientes, skills, procedimientos (SoP) y directrices, promueve scripts a tools de plugin (`.opencode/plugin/`) y commitea sus cambios automáticamente.
+- La agencia se auto-mejora: consolida lecciones y conocimiento de dominio (`memoria/conocimiento/`), actualiza expedientes, skills, procedimientos (SoP) y normas operativas, promueve scripts a tools de plugin (`.opencode/plugin/`) y commitea sus cambios automáticamente.
 - Límites: la agencia respeta siempre `constitucion/limites.md`; si un trabajo excede un límite, te consulta antes de seguir.
 
 ## Estructura
 - `backlog/` — ideas y funcionalidades (In Progress, Pending, In Review; archivo con Completed y Discarted).
-- `constitucion/` — carta evolutiva: contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices (funcionales/técnicas) y procedimientos SoP.
+- `constitucion/` — carta evolutiva: contexto, responsabilidades, funciones, objetivos, entregables, límites, directrices (fundamentales, solo usuario), normas operativas (funcionales/técnicas) y procedimientos SoP.
 - `plantilla/empleados/` — expedientes de empleados.
 - `memoria/` — trabajos, feedback, conocimiento de dominio, lecciones y estado del ciclo de vida.
 - `salida/` — entregables por trabajo.

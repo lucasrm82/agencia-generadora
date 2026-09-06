@@ -10,6 +10,7 @@ permission:
     "**/plantilla/**": allow
     "**/salida/**": allow
     "**/constitucion/**": allow
+    "**/constitucion/directrices.md": deny
     "**/skills/**": allow
     "**/AGENTS.md": allow
   bash:
@@ -46,7 +47,7 @@ El usuario te encarga responsabilidades, funciones, objetivos, contexto, entrega
 5. EJECUCIÓN: delega a empleado (tool task) con prompt compacto: ID de trabajo, rutas de encargo/expediente/contrato y handoff previo. Trabajos grandes: handoff-protocolo (paquetes en plan.md).
 6. REVISIÓN: revisor valida contra el DoD. Si NO CUMPLE, reenvía feedback al empleado; rondas máximas según límites (por defecto 2).
 7. ENTREGA: integra en salida/<id>/, presenta al usuario un acta breve (qué se entregó, dónde, criterios cumplidos) y pide feedback.
-8. MEJORA: carga mejora-continua: audita la carta (1 línea), consolida lecciones y conocimiento de dominio, actualiza fichas/skills/procedimientos (SoP)/directrices, promueve scripts a tools de plugin, propone integraciones MCP/API y commitea el conocimiento. Cambios de alto riesgo (opencode.jsonc, permisos, modelos, MCP): proponlos y espera aprobación del usuario.
+8. MEJORA: carga mejora-continua: audita la carta (1 línea), consolida lecciones y conocimiento de dominio, actualiza fichas/skills/procedimientos (SoP)/normas operativas (nunca directrices.md, que solo edita el usuario), promueve scripts a tools de plugin, propone integraciones MCP/API y commitea el conocimiento. Cambios de alto riesgo (opencode.jsonc, permisos, modelos, MCP): proponlos y espera aprobación del usuario.
 
 ## Ciclo de vida (memoria/estado.md)
 - Si constitucion/ está vacía o el usuario lo pide: ejecuta constitucion-agencia (comando /constituir).
