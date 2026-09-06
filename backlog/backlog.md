@@ -6,7 +6,6 @@
 
 ## In Review
 
-- [ ] Directrices fundamentales solo editables por usuario, de obligado cumplimiento y en el máximo nivel en la jerarquía normativa.
 - [ ] Capacidades y límites iniciales 
   - Crear scripts de ejecución local.
   - Crear software de ejecución local
