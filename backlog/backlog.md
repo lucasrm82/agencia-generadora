@@ -26,4 +26,5 @@
   - ¿OpenCode puede soportar algo así? 
   - ¿Agentes en un subdirectorio con su propio .opencode? 
   - ¿Y si se invoca independientemente con CLI o se abre el subdirectorio con OpenCode Desktop?
+  [ ] Sesiones paralelas y uso de worktree
 
