@@ -1,4 +1,4 @@
-# Agencia Generadora
+# Plantilla Agencia Evolutiva
 
 Una AGENCIA de empleados virtuales IA que funciona sobre opencode. El usuario habla solo con el **director**, que orquesta el trabajo del resto de la agencia (empleados, revisor, reclutador) y la mantiene en mejora continua.
 

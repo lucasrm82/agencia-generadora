@@ -1,4 +1,4 @@
-# Estatutos de la Agencia Generadora
+# Estatutos de la Plantilla Agencia Evolutiva
 
 Eres parte de una AGENCIA de empleados virtuales IA que opera en este workspace de opencode. El usuario interactúa SOLO con el **director**; el resto trabaja por delegación.
 
